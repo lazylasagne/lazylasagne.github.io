@@ -5,6 +5,19 @@ body {
     background-color: rgb(120,120,120);
 }
 
+a {
+    color: crimson;
+    text-decoration: none;
+    font-weight: normal;
+    font-style: normal;
+}
+
+a:hover {
+    color: coral;
+    text-decoration: underline;
+    font-style: oblique;
+}
+
 #rainbow {
     font-family: "Faculty Glyphic", sans-serif;
     font-weight: 400;
@@ -20,4 +33,14 @@ body {
     height: 100vh;
     text-align: center;
     margin: 0 auto;
+}
+
+#navlinks {
+    list-style: none;
+    font-size: 20px;
+}
+
+#navlinks li {
+    display: inline;
+    margin-left: 10px;
 }
