@@ -5,20 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>feelin' lazyyyy</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Img/modem-4.png">
 </head>
 <body>
-    <div class="main">
-        <span id="rainbow">im too lazy to create a homepage</span>
-        <ul id="navlinks">
-            <li>
-                <a href="SubPages/randompokemon.html">Random Pokemon</a>
-            </li>
-            <li>
-                <a href="https://lazzl.neocities.org">Main Site</a>
-            </li>
-        </ul>
+    <div class="wrapper">
+        <div id="header">
+            <span id="rainbow" style="margin-left: 10px;">im too lazy to create a homepage..</span>
+            <ul id="navlinks">
+                <li>
+                    <a href="SubPages/randompokemon.html">Random Pokemon</a>
+                </li>
+            </ul>
+        </div>
+        <div id="container">
+            <div class="leftbar">
+                <div class="navlinks">
+                    <h2>Navigation:</h2>
+                    <p onclick="loadIframe('IframePages/main.html')" class="navlink">HOME</p>
+                    <p onclick="loadIframe('IframePages/main.html')" class="navlink">ABOUT</p>
+                    <p onclick="loadIframe('IframePages/main.html')" class="navlink">HARDWARE</p>
+                    <a href="https://lazzl.neocities.org" target="_blank" class="navlink">MAIN SITE</a>
+                    <div class="divider"></div>
+                    <div class="counter">
+                        <p style="font-size: 20px;">Congratulations you're visitor number:</p>
+                        <p id="CounterVisitor" style="font-size: 25px;">0</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="player">
+                        <img src="Img/kirby.gif" onclick="toggleAudio()" id="kirby">
+                        <p class="tip">TIP: Click the Kirby!</p>
+                        <audio autoplay loop id="bgmusic">
+                            <source src="Img/greenhillzone.mp3">
+                            Your browser does not support audio elements.
+                        </audio>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="userboxes">
+                        <img class="userbox" src="Img/atom.jpg">
+                        <img class="userbox" src="Img/sonic.jpg">
+                        <img class="userbox" src="Img/mariokart.jpg">
+                        <img class="userbox" src="Img/miku.jpg">
+                        <img class="userbox" src="Img/mars.jpg">
+                    </div>
+                    <div class="divider"></div>
+                    <div class="footer">
+                        Made by Lazzl♥ est. 08.11.2024 | Last Update: 10.11.2024
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <iframe id="mainframe" frameborder="0" src="">
+                    Your browser does not support iframes.
+                </iframe>
+            </div>
+        </div>
     </div>
-    <script src="JS/cursor.js"></script>
     <script src="JS/rainbowtext.js"></script>
+    <script src="JS/counter.js"></script>
+    <script src="JS/cursor.js"></script>
+    <script>
+        const audio = document.getElementById("bgmusic");
+        const playpause = document.getElementById('kirby');
+
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.addEventListener('click', () => {
+                audio.play();
+            }, { once: true });
+        });
+    </script>
 </body>
 </html>
