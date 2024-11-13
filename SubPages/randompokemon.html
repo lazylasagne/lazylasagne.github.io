@@ -13,13 +13,26 @@
     ">
     <title>random pokemon</title>
     <style>
+        :root {
+            --yellow: #FFC72C;
+            --purple: #9A4EAE;
+            --coral: #F94D00;
+            --green: #1B4D3E;
+            --lime: #32DE84;
+            --lime2:  #52be80;
+            --bg1: #c2b7b0;
+            --text: #2F4858;
+            --border: #4d3e36;
+        }
+
         body {
-            background-image: url("../Img/purplehex.png");
-            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+            color: var(--text);
+            background-color: var(--bg1);
         }
 
         h2 {
-            color: coral;
+
             text-decoration: underline;
             font-weight: bold;
             font-style: oblique;
@@ -32,19 +45,18 @@
         }
 
         footer a {
-            color: lime;
+            color: var(--lime);
             text-decoration: none;
         }
 
         footer a:hover {
-            color: green;
+            color: var(--green);
             text-decoration: underline;
             font-style: oblique;
         }
 
         #pokemon-container {
             text-align: center;
-            color: coral;
         }
 
         #pokemon-container img {
@@ -56,23 +68,18 @@
             width: 300px;
             height: 400px;
             text-align: center;
-            color: coral;
             display: block;
             margin: 0 auto;
         }
 
         .pokemon-name {
             font-weight: bold;
-            color: crimson;
             font-size: 20px;
         }
 
         .pokemon-image {
-            border: 2px magenta dotted;
-            background-image: url("../Img/random-pokemon.jpg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+            border: 2px var(--border) dotted;
+            background-color: var(--bg1);
             width: 200px;
             height: 200px;
         }
