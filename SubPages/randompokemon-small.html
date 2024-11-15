@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random pokemon</title>
+    <style>
+        :root {
+            --darktan: #bc9055;
+            --blackeel: #463E3F;
+            --green: #a4d07a;
+            --tan: #f9f7f5;
+            --tan2 : #f1ebe7;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--tan);
+            font-family: Copperplate, Papyrus, fantasy;
+            color: var(--blackeel);
+        }
+
+        h2 { font-size: 25px; font-weight: bolder;}
+        
+        footer {
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: var(--darktan);
+        }
+
+        footer a:hover { text-decoration: underline; font-style: oblique;}
+
+        #pokemon-container {
+            text-align: center;
+        }
+
+        #pokemon-container img {
+            width: 100px;
+            height: 100px;
+            border: 3px var(--darktan) solid;
+            background: linear-gradient(var(--tan), var(--tan2));
+        }
+
+        #randomPokemonContainer {
+            width: 200px;
+            height: 250px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="randomPokemonContainer">
+        <div id="pokemon-container">
+
+        </div>
+    </div>
+
+    <footer>
+        Made by <a href="https://lazzl.neocities.org">Lazzl</a> on Neocities!<br>
+        How to embed? Check <a href="iframe-tut.html">tutorial</a>
+    </footer>
+    <script src="../JS/pokemon.js"></script>
+</body>
+</html>
