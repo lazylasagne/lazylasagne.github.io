@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smazVO - Random Pokemon</title>
+    <link rel="icon" type="image/x-icon" href="../Resources/Images/0046Paras.png">
+    <style>
+        :root {
+            --purple3: #9400D3;
+            --purple4: #9932CC;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(90deg, var(--purple3), var(--purple4));
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 15px;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .pokemon-name {
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        footer {
+            text-align: center;
+            width: 100%;
+            margin-top: 400px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #222;
+        }
+
+        footer a:hover {
+            color: #333;
+            text-decoration: underline;
+        }
+
+        #pokemon-container {
+            text-align: center;
+        }
+
+        #pokemon-container img {
+            width: 200px;
+            height: 200px;
+            border: thin solid #fff;
+            cursor: pointer;
+        }
+
+        #randomPokemonContainer {
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .btn {
+            outline: none;
+            background-color: #002D62;
+            color: #fff;
+            border: thin solid #fff;
+            font-size: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            cursor: pointer;
+            width: 70px;
+        }
+
+        .btn:hover {
+            text-decoration: underline;
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+    <div id="randomPokemonContainer">
+        <div id="pokemon-container"></div>
+        <button class="btn" onclick="fetchPokemonData();">Next</button>
+    </div>
+    <footer>
+        Made by <a href="https://smazvo.neocities.org" target="_blank">smazvo</a> on Neocities.<br>
+        If you want to embed this go and read my tutorial on this website.<br>
+        <em>click on pokemon to make it shiny!</em>
+    </footer>
+    <script src="pokemon.js"></script>
+</body>
+</html>
